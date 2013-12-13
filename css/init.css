@@ -113,7 +113,7 @@ body:after {
 body > h1:first-child {
   color: #eff0f2;
   text-align: center;
-  line-height: 3;
+  line-height: 4;
   font-size: 3em;
   font-family: Georgia,Cambria,"Times New Roman",Times,serif;
   text-transform: uppercase;
@@ -194,7 +194,7 @@ body blockquote {
   padding: 0;
   font-family: Georgia,Cambria,"Times New Roman",Times,serif;
   letter-spacing: .01rem;
-  font-weight: 400;
+  font-weight: 500;
   font-style: italic;
   padding: 0 .5em;
   padding-bottom: 3px;

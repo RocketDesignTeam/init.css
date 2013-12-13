@@ -90,7 +90,7 @@ padding:.3em;
 
 header h2 {
 font-size: 26px;
-color: #9ddcff;
+color: #c2e86f;
 font-weight: normal;
 line-height: 1.3;
 width: 540px;
@@ -106,7 +106,7 @@ padding:.3em;
 .inner {
 position: relative;
 width: 940px;
-margin: 0 auto;
+margin: 4em auto;
 height: 12em;
 }
 }
@@ -249,7 +249,7 @@ color: #474747;
 
 #main-content h1:before {
 content: "/";
-color: #9ddcff;
+color: #c2e86f;
 padding-right: 0.3em;
 margin-left: -0.9em;
 }
@@ -263,7 +263,7 @@ color: #474747;
 } 
 #main-content h2:before {
 content: "//";
-color: #9ddcff;
+color: #c2e86f;
 padding-right: 0.3em;
 margin-left: -1.5em;
 }
