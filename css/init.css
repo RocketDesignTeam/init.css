@@ -181,16 +181,15 @@ body p {
   width: 100%;
   display: block;
 }
-float:left
 body p > a {
   color: #737373;
   box-shadow: 0 0 0;
   padding: 0;
   margin: 0;
   /**/
-  display: inline;
-  float: inherit;
-  clear: inherit;
+  display: inline !important;
+  float: inherit !important;
+  clear: inherit !important;
 }
 body blockquote {
   line-height: 1.4;
@@ -238,13 +237,13 @@ body img {
   float: left;
 }
 body img {
-  width: 50% !important;
+  width: 50% ;
 }
 body ~ img + img {
-  width: 50% !important;
+  width: 50% ;
 }
 body hr ~ img + img {
-  width: 25% !important;
+  width: 25% ;
 }
 
 @media all and (max-width: 40em) {
