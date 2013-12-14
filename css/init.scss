@@ -78,6 +78,7 @@ body{
       color:$c-1;
     }
   }
+hr{border:0;}
   //alternative header  
   h1 + img{
     height:77vw; 
@@ -196,6 +197,9 @@ body{
     }
   } 
   p{ 
+    width:100%;
+    display:block;
+    float:left
     &> a{ //Inline <a> tags (in a chain of text, so not a button)
       color:$c-3;
       @include box-shadow(0 0 0);
@@ -230,6 +234,7 @@ body{
   }*/
   }
   
+
   img{
     display:block;
     width:100%;
@@ -244,6 +249,20 @@ body{
     }
   }
   
+
+
+ h1 + img,
+ h2 + img,
+ h3 + img, 
+ h4 + img,
+ h5 + img,
+ h6 + img, 
+ p + img {width:100% !important; }  
+img{ float:left}
+img{width:50% !important}
+&~ img + img {width:50% !important}
+ 
+hr ~ img + img{width:25% !important}
   //End (I plan to maybe add margin at the end.. ) 
   *::last-of-type{
     

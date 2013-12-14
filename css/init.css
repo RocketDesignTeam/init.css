@@ -64,6 +64,9 @@ body:before::selection {
   background: #eff0f2;
   color: #333333;
 }
+body hr {
+  border: 0;
+}
 body h1 + img {
   height: 77vw;
   width: auto;
@@ -142,7 +145,7 @@ body > h1:not(:first-child), body h2, body h3, body h4, body h5, body h6 {
   text-transform: Capitalize;
   clear: both;
 }
-body h1 + p, body h2 + p, body h3 + p, body h4 + p, body h5 + p, body h5 + p {
+body h1 + p, body h2 + p, body h3 + p, body h4 + p, body h5 + p, body h6 + p {
   font-family: Georgia,Cambria,"Times New Roman",Times,serif;
   letter-spacing: .01rem;
   font-weight: 400;
@@ -174,6 +177,11 @@ body a {
 body a:last-child {
   clear: both;
 }
+body p {
+  width: 100%;
+  display: block;
+}
+float:left
 body p > a {
   color: #737373;
   box-shadow: 0 0 0;
@@ -216,6 +224,27 @@ body img + img {
 body img + img + img + img {
   width: 25%;
   float: left;
+}
+body h1 + img,
+body h2 + img,
+body h3 + img,
+body h4 + img,
+body h5 + img,
+body h6 + img,
+body p + img {
+  width: 100% !important;
+}
+body img {
+  float: left;
+}
+body img {
+  width: 50% !important;
+}
+body ~ img + img {
+  width: 50% !important;
+}
+body hr ~ img + img {
+  width: 25% !important;
 }
 
 @media all and (max-width: 40em) {
