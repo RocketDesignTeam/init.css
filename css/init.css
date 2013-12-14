@@ -113,7 +113,7 @@ body:after {
 body > h1:first-child {
   color: #eff0f2;
   text-align: center;
-  line-height: 4;
+  line-height: 3;
   font-size: 3em;
   font-family: Georgia,Cambria,"Times New Roman",Times,serif;
   text-transform: uppercase;
@@ -133,17 +133,16 @@ body > h2:last-of-type {
   z-index: 9;
   width: 100%;
 }
-body > h1:not(:first-child) {
+body > h1:not(:first-child), body h2, body h3, body h4, body h5, body h6 {
   color: #333333;
   line-height: 3;
-  font-size: 2em;
   padding: 0 .6em;
   margin: 1.5em 0 -1em;
   font-family: Georgia,Cambria,"Times New Roman",Times,serif;
   text-transform: Capitalize;
   clear: both;
 }
-body h1 + p {
+body h1 + p, body h2 + p, body h3 + p, body h4 + p, body h5 + p, body h5 + p {
   font-family: Georgia,Cambria,"Times New Roman",Times,serif;
   letter-spacing: .01rem;
   font-weight: 400;
@@ -194,7 +193,7 @@ body blockquote {
   padding: 0;
   font-family: Georgia,Cambria,"Times New Roman",Times,serif;
   letter-spacing: .01rem;
-  font-weight: 500;
+  font-weight: 400;
   font-style: italic;
   padding: 0 .5em;
   padding-bottom: 3px;

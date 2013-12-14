@@ -151,17 +151,16 @@ body{
     z-index:9;
     width:100%; 
   }
-  > h1:not(:first-child){
+  > h1:not(:first-child),h2,h3,h4,h5,h6{
     color:$c-1;
     line-height:3;
-    font-size:2em;
     padding:0 .6em;
     margin:1.5em 0 -1em;
     font-family:Georgia,Cambria,"Times New Roman",Times,serif;
     text-transform:Capitalize;
      clear:both; 
 }
-  h1 + p{
+  h1 + p,h2 + p,h3 + p,h4 + p,h5 + p,h6 + p{
     font-family:Georgia,Cambria,"Times New Roman",Times,serif;
     letter-spacing: .01rem;
     font-weight: 400;
