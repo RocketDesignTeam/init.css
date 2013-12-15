@@ -13,7 +13,7 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <title>Init.css by LukyVj</title>
+    <title>Init.css</title>
   </head>
 
   <body>
@@ -51,7 +51,7 @@
 <p>Its really simple, the title of your document will be the first <code>H1</code> of the page, and it'll stand on the header.</p>
 <pre><code>&lt;html&gt;
     &lt;head&gt;
-        &lt;My super init.css website&gt;
+        &lt;title&gt;My super init.css website&lt;/title&gt;
         &lt;link rel="stylesheet" type="text/css" href="init.css" /&gt;
     &lt;/head&gt;
 
@@ -60,13 +60,13 @@
     &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>    
-            
+<a href="#" class="btn">demo</a>            
 <h2>Header image</h2>
 <p>If you want to add a cool header image to give more power to your page, there is an easy way to do it.<br/> You just have to add an <code>&lt;img /&gt;</code> tag right after the first <code>H1</code></p>
 
 <pre><code>&lt;html&gt;
     &lt;head&gt;
-        &lt;My super init.css website&gt;
+         &lt;title&gt;My super init.css website&lt;/title&gt;
         &lt;link rel="stylesheet" type="text/css" href="init.css" /&gt;
     &lt;/head&gt;
 
@@ -76,13 +76,14 @@
     &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>    
-            
+         <a href="#" class="btn">demo</a>            
+   
 <h2>Paragraph</h2>
 <p>you want to add a simple paragraph to your document, just add a <code>&lt;p&gt;</code> tag right after a <code>H1</code> tag.</p>
 
 <pre><code>&lt;html&gt;
     &lt;head&gt;
-        &lt;My super init.css website&gt;
+         &lt;title&gt;My super init.css website&lt;/title&gt;
         &lt;link rel="stylesheet" type="text/css" href="init.css" /&gt;
     &lt;/head&gt;
 
@@ -95,13 +96,14 @@
     &lt;/body&gt; 
 &lt;/html&gt;
 </code></pre>    
-            
+           <a href="#" class="btn">demo</a>            
+ 
 <h2>Blockquote</h2>
 <p>Blockquotes are a good way to make an important text more visible, and with init.css the blockquotes are designed to be elegant and beautiful.</p>
 
 <pre><code>&lt;html&gt;
     &lt;head&gt;
-        &lt;My super init.css website&gt;
+          &lt;title&gt;My super init.css website&lt;/title&gt;
         &lt;link rel="stylesheet" type="text/css" href="init.css" /&gt;
     &lt;/head&gt;
 
@@ -116,13 +118,14 @@
     &lt;/body&gt; 
 &lt;/html&gt;
 </code></pre>    
-  
+  <a href="#" class="btn">demo</a>            
+
 <h2>Links</h2>
 <p>To insert a simple link, just add a <code>&lt;a href="#"&gt;</code> inside a <code>&lt;p&gt;</code> tag, and it'll be recognized as a link in a text and not button</p>
 
 <pre><code>&lt;html&gt;
     &lt;head&gt;
-        &lt;My super init.css website&gt;
+         &lt;title&gt;My super init.css website&lt;/title&gt;
         &lt;link rel="stylesheet" type="text/css" href="init.css" /&gt;
     &lt;/head&gt;
 
@@ -134,13 +137,14 @@ an other &lt;a href="#"&gt;link&lt;/a&gt;&lt;/p&gt;
     &lt;/body&gt; 
 &lt;/html&gt;
 </code></pre> 
-            
+           <a href="#" class="btn">demo</a>            
+ 
 <h2>Buttons</h2>
 <p>If you want to place some buttons on your document, to link some resources or anything, you have to place a <code>&lt;a href="#"&gt;</code> but not inside a <code>&lt;p&gt;</code> or it'll be a simple link.</p>
 
 <pre><code>&lt;html&gt;
     &lt;head&gt;
-        &lt;My super init.css website&gt;
+          &lt;title&gt;My super init.css website&lt;/title&gt;
         &lt;link rel="stylesheet" type="text/css" href="init.css" /&gt;
     &lt;/head&gt;
 
@@ -153,27 +157,93 @@ an other &lt;a href="#"&gt;link&lt;/a&gt;&lt;/p&gt;
     &lt;/body&gt; 
 &lt;/html&gt;
 </code></pre>    
-            
+    <a href="#" class="btn">demo</a>            
+        
 
 <h2>Images</h2>
+            
+<h3>Full width images</h3>
 <p>You want to add images to your document, a simple <code>&lt;img src="#" /&gt;</code> will work.</p>
-<p>But with init.css, if you add like 4 images, it'll be recognized as a small gallery, and it'll have an other look than if you add just one <code>&lt;img src="#"&gt;</code> tag.</p>
-
+<p>But there is a little logic about images. If you want to have a plain image on your article, a full width image, to illustrate your point, you can just place an <code>&lt;img src="#" /&gt;</code> tag right after a <code>&lt;/p&gt;</code> or any header tag (&lt;h1&gt; -> &lt;h6&gt;) and you will have a full width image.  </p>
+<span class="hint h--warning"><p>We recommend to use a rectangular image for a better effect.</p></span>
 <pre><code>&lt;html&gt;
     &lt;head&gt;
-        &lt;My super init.css website&gt;
+          &lt;title&gt;My super init.css website&lt;/title&gt;
         &lt;link rel="stylesheet" type="text/css" href="init.css" /&gt;
     &lt;/head&gt;
 
     &lt;body&gt;
+            
+         &lt;h1&gt;A full width image with a h1 &lt;/h1&gt;
+         &lt;img src="#" /&gt;
 
-         &lt;a href="#"&gt;button 1&lt;/a&gt;
-         &lt;a href="#"&gt;button 2&lt;/a&gt;
-         &lt;a href="#"&gt;button 3&lt;/a&gt;
+         &lt;h2&gt;A full width image with a h2 &lt;/h2&gt;
+         &lt;img src="#" /&gt;
+            
+         &lt;h3&gt;A full width image with a h3 &lt;/h3&gt;
+         &lt;img src="#" /&gt;
 
+         &lt;h4&gt;A full width image with a h4 &lt;/h4&gt;
+         &lt;img src="#" /&gt;
+            
+         &lt;h5&gt;A full width image with a h5 &lt;/h5&gt;
+         &lt;img src="#" /&gt;
+
+         &lt;h6&gt;A full width image with a h6 &lt;/h6&gt;
+         &lt;img src="#" /&gt;
+            
+         &lt;p&gt;A full width image with a p &lt;/p&gt;
+         &lt;img src="#" /&gt;
+         &lt;p&gt;And you can go on &lt;/p&gt;
+
+     
     &lt;/body&gt; 
 &lt;/html&gt;
-</code></pre>    
+</code></pre>
+       <a href="#" class="btn">demo</a>            
+     
+            
+<h3>Pyramidal structure </h3>
+<p>If you want to show more than one image to illustrate your document, you just have to add more images, and the images following the first one, will have a width of 50%. And it'll create a kind of pyramidal structure. </p>
+            <pre><code>&lt;html&gt;
+    &lt;head&gt;
+          &lt;title&gt;My super init.css website&lt;/title&gt;
+        &lt;link rel="stylesheet" type="text/css" href="init.css" /&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+            
+         &lt;h1&gt;Pyramidal structure &lt;/h1&gt;
+         &lt;img src="#" /&gt; &lt;!-- this is a 100% width img --&gt;
+         &lt;img src="#" /&gt; &lt;img src="#" /&gt; &lt;!-- those are 50% width img --&gt;
+     
+    &lt;/body&gt; 
+&lt;/html&gt;
+</code></pre>
+         <a href="#" class="btn">demo</a>            
+   
+<h3>Micro showcase </h3>
+<p>We wanted to use an inline tag to trigger the creation of a little gallery like structure.</p>
+<p>For it you just have to place a <code>&lt;hr/&gt;</code> tag and right after you place your <code>&lt;img src="#" /&gt;</code> tags and it will have a special structure.</p>
+            <pre><code>&lt;html&gt;
+    &lt;head&gt;
+          &lt;title&gt;My super init.css website&lt;/title&gt;
+        &lt;link rel="stylesheet" type="text/css" href="init.css" /&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+            
+         &lt;h1&gt;Micro showcase &lt;/h1&gt;
+        &lt;hr/&gt;
+         &lt;img src="#" /&gt; &lt;!-- this is a 50% width img --&gt;
+         &lt;img src="#" /&gt; &lt;img src="#" /&gt; &lt;!-- those are 50% width img --&gt;
+         &lt;img src="#" /&gt; &lt;img src="#" /&gt; &lt;!-- those are 50% width img --&gt;
+     
+    &lt;/body&gt; 
+&lt;/html&gt;
+</code></pre>
+            <a href="#" class="btn">demo</a>            
+
 </section>
 
         <aside id="sidebar">

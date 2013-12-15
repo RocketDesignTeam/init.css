@@ -49,6 +49,7 @@ border-spacing: 0;
 }
 
 /* LAYOUT STYLES */
+*{-webkit-font-smoothing:antialiased;}
 body {
 font-size: 15px;
 line-height: 1.5; 
@@ -279,7 +280,7 @@ color: #474747;
 
 #main-content h3:before {
 content: "///";
-color: #9ddcff;
+color: #c2e86f;
 padding-right: 0.3em;
 margin-left: -2em;
 }
@@ -487,9 +488,41 @@ padding-right: 0;
 margin-left: 0;
 }
 }
-
+.hint {
+  padding: .5em .4em;
+  border: 1px solid;
+  display: block;
+    float:left;
+  background: rgba(103, 212, 93, 0.85);
+  border-color: #67d45d;
+  border-radius: 3px;
+  color: #fff;
+  line-height: 3;
+    height:1em;
+    width:100%;
+    
+}
+.hint p{
+line-height: 1;
+float: left;}
+.btn{
+ padding: .4em;
+background: #1B9AF7;
+line-height: 1.1;
+border-radius: 4px;
+display: block;
+width: 4em;
+font-size: 1.2em;
+text-align: center;
+height: 1em;
+color: #fff;
+text-decoration: none;
+  
+}
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {}
+
+
