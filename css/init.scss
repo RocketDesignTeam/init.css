@@ -272,7 +272,8 @@ h2,h3,h4,h5,h6{ color:$c-1;
   }*/
   }
   
-  img{
+
+     img{
     display:block;
     width:100%;
     padding:1em;
@@ -285,11 +286,27 @@ h2,h3,h4,h5,h6{ color:$c-1;
       float:left;
     }
   }
+a+img{
+    display:block;
+    width:100% !important;
+    padding:1em;
+}
   
-  //End (I plan to maybe add margin at the end.. ) 
-  *::last-of-type{
-    
-  }
+
+
+ h1 + img,
+ h2 + img,
+ h3 + img, 
+ h4 + img,
+ h5 + img,
+ h6 + img, 
+ p + img {width:100% !important; }  
+img{ float:left}
+img{width:50% !important}
+&~ img + img {width:50% !important}
+ 
+hr ~ img + img{width:25% !important}
+   
 }
 
 @media all and (max-width:40em){
@@ -314,37 +331,7 @@ h2,h3,h4,h5,h6{ color:$c-1;
       }
     }
           a{width:93% ;display:block;float:left;text-align:center} 
-
-     img{
-    display:block;
-    width:100%;
-    padding:1em;
-    &+img{
-      width:50%;
-      float:left;
-    }
-    &+ img + img + img{
-      width:25%;
-      float:left;
-    }
-  }
-  
-
-
- h1 + img,
- h2 + img,
- h3 + img, 
- h4 + img,
- h5 + img,
- h6 + img, 
- p + img {width:100% !important; }  
-img{ float:left}
-img{width:50% !important}
-&~ img + img {width:50% !important}
- 
-hr ~ img + img{width:25% !important}
-    }
-  }
+}
 
 
 
@@ -353,4 +340,5 @@ hr ~ img + img{width:25% !important}
   p,h1:not(:first-child), blockquote{
   text-shadow:0 -.05em 0 white;
 } 
-}  
+}
+}
