@@ -1,3 +1,4 @@
+@import 'normalize-2.1.3.css';
 /*
 # init.css
 */
@@ -34,6 +35,20 @@ body {
   overflow-x: hidden;
   position: absolute;
   z-index: 10;
+  /*  > h2:last-of-type{
+      color:$c-2;
+      text-align:center;
+      font-size:.9em;
+      font-family:Georgia,Cambria,"Times New Roman",Times,serif;
+      text-transform:uppercase;
+      letter-spacing:.085em;
+      position:fixed;
+      line-height:0;
+      margin-top:-39.3em;
+      display:block;
+      z-index:9;
+      width:100%; 
+    }*/
   /* Quote */
 }
 body * {
@@ -63,9 +78,6 @@ body:before {
 body:before::selection {
   background: #eff0f2;
   color: #333333;
-}
-body hr {
-  border: 0;
 }
 body h1 + img {
   height: 77vw;
@@ -122,30 +134,17 @@ body > h1:first-child {
   text-transform: uppercase;
   letter-spacing: .085em;
 }
-body > h2:last-of-type {
-  color: #eff0f2;
-  text-align: center;
-  font-size: .9em;
-  font-family: Georgia,Cambria,"Times New Roman",Times,serif;
-  text-transform: uppercase;
-  letter-spacing: .085em;
-  position: fixed;
-  line-height: 0;
-  margin-top: -39.3em;
-  display: block;
-  z-index: 9;
-  width: 100%;
-}
-body > h1:not(:first-child), body h2, body h3, body h4, body h5, body h6 {
+body > h1:not(:first-child) {
   color: #333333;
   line-height: 3;
+  font-size: 2em;
   padding: 0 .6em;
   margin: 1.5em 0 -1em;
   font-family: Georgia,Cambria,"Times New Roman",Times,serif;
   text-transform: Capitalize;
   clear: both;
 }
-body h1 + p, body h2 + p, body h3 + p, body h4 + p, body h5 + p, body h6 + p {
+body h1:not(:first-child) + p {
   font-family: Georgia,Cambria,"Times New Roman",Times,serif;
   letter-spacing: .01rem;
   font-weight: 400;
@@ -154,6 +153,47 @@ body h1 + p, body h2 + p, body h3 + p, body h4 + p, body h5 + p, body h6 + p {
   line-height: 1.5;
   padding: .4em 1em;
   color: #333333;
+}
+body h2, body h3, body h4, body h5, body h6 {
+  color: #333333;
+  line-height: 3;
+  padding: 0 .6em;
+  margin: 1.5em 0 -1em;
+  font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+  text-transform: Capitalize;
+  clear: both;
+}
+body h1:not(:first-child) + p,
+body h2 + p,
+body h3 + p,
+body h4 + p,
+body h5 + p,
+body h6 + p {
+  font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+  letter-spacing: .01rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.375em;
+  line-height: 1.5;
+  padding: .4em 1em;
+  color: #333333;
+  line-height: 32px;
+}
+body h1:not(:first-child) + p + blockquote + p,
+body h2 + p + blockquote + p,
+body h3 + p + blockquote + p,
+body h4 + p + blockquote + p,
+body h5 + p + blockquote + p,
+body h6 + p + blockquote + p {
+  font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+  letter-spacing: .01rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.375em;
+  line-height: 1.5;
+  padding: .4em 1em;
+  color: #333333;
+  line-height: 32px;
 }
 body p, body a {
   font-family: Georgia,Cambria,"Times New Roman",Times,serif;
@@ -171,15 +211,10 @@ body a {
   margin-left: .86em;
   margin-top: 1em;
   color: #737373;
-  display: block;
-  float: left;
+  display: inline-block;
 }
 body a:last-child {
   clear: both;
-}
-body p {
-  width: 100%;
-  display: block;
 }
 body p > a {
   color: #737373;
@@ -187,9 +222,9 @@ body p > a {
   padding: 0;
   margin: 0;
   /**/
-  display: inline !important;
-  float: inherit !important;
-  clear: inherit !important;
+  display: inline;
+  float: inherit;
+  clear: inherit;
 }
 body blockquote {
   line-height: 1.4;
@@ -237,13 +272,13 @@ body img {
   float: left;
 }
 body img {
-  width: 50% ;
+  width: 50% !important;
 }
 body ~ img + img {
-  width: 50% ;
+  width: 50% !important;
 }
 body hr ~ img + img {
-  width: 25% ;
+  width: 25% !important;
 }
 
 @media all and (max-width: 40em) {
